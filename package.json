@@ -27,6 +27,7 @@
     "getpass": "^0.1.7",
     "har-schema": "^2.0.0",
     "har-validator": "^5.1.5",
+    "http": "^0.0.1-security",
     "http-signature": "^1.2.0",
     "is-typedarray": "^1.0.0",
     "isstream": "^0.1.2",

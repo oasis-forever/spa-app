@@ -12,6 +12,7 @@
     "aws4": "^1.11.0",
     "bcrypt-pbkdf": "^1.0.2",
     "caseless": "^0.12.0",
+    "colors": "^1.4.0",
     "combined-stream": "^1.0.8",
     "core-util-is": "^1.0.2",
     "dashdash": "^1.14.1",

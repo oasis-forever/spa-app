@@ -24,6 +24,7 @@
     "fast-json-stable-stringify": "^2.1.0",
     "forever-agent": "^0.6.1",
     "form-data": "^2.3.3",
+    "fs": "^0.0.1-security",
     "getpass": "^0.1.7",
     "har-schema": "^2.0.0",
     "har-validator": "^5.1.5",

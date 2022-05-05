@@ -12,11 +12,21 @@
     const root = document.getElementById('root')
     ReactDOM.render(getDOM(), root)
     function getDOM() {
+      const style1 = {
+        "color": "red",
+        "background-color": "#f0f0ff",
+        "font-size": "2em",
+      }
+      const style2 = {
+        color: 'blue',
+        backgroundColor: '#fff0f0',
+        fontSize: '2em',
+      }
       return (
         <div>
-          <h1>Sayings</h1>
-          <p>Keep looking, don't settle.</p>
-          <p>Stay hungry, stay foolish.</p>
+          <h1>Style</h1>
+          <p style={style1}>This is Style1</p>
+          <p style={style2}>This is Style2</p>
         </div>
       )
     }

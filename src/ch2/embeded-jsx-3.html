@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script type="text/babel">
+    const root = document.getElementById('root')
+    ReactDOM.render(getDOM(), root)
+    function getDOM() {
+      return (
+        <div>
+          <h1>Sayings</h1>
+          <p>Keep looking, don't settle.</p>
+          <p>Stay hungry, stay foolish.</p>
+        </div>
+      )
+    }
+  </script>
+</html>

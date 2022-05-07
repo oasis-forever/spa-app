@@ -10,6 +10,9 @@
     <div id="root"></div>
   </body>
   <script type="text/babel">
+    const root = document.getElementById('root')
+    ReactDOM.render(dom, root)
+
     const PhotoText = class extends React.Component {
       render() {
         const label    = this.props.label
@@ -20,6 +23,7 @@
           padding: '4px',
           textAlign: 'center',
         }
+
         return(
         <div style={boxStyle}>
           <p>{label}</p>
@@ -28,13 +32,12 @@
         )
       }
     }
+
     const dom =
     <div>
       <PhotoText image="my-lovely-cat-1" label="My Lovely Cat 1" />
       <PhotoText image="my-lovely-cat-2" label="My Lovely Cat 2" />
       <PhotoText image="my-lovely-cat-3" label="My Lovely Cat 3" />
     </div>
-    const root = document.getElementById('root')
-    ReactDOM.render(dom, root)
   </script>
 </html>

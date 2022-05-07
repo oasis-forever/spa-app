@@ -10,9 +10,13 @@
     <div id="root"></div>
   </body>
   <script type="text/babel">
+    const root = document.getElementById('root')
+    ReactDOM.render(dom, root)
+
     function Greet(props) {
       return <h1>{props.type}</h1>
     }
+
     const dom =
     <div>
       <Greet type="Good morning!" />
@@ -20,7 +24,5 @@
       <Greet type="Good afternoon!" />
       <Greet type="Good evening!" />
     </div>
-    const root = document.getElementById('root')
-    ReactDOM.render(dom, root)
   </script>
 </html>

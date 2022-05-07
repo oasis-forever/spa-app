@@ -10,6 +10,7 @@
     <div id="root"></div>
   </body>
   <script type="text/babel">
+    const root   = document.getElementById('root')
     const title  = 'Calligraphy'
     const imgSrc = 'http://uta.pw/shodou/img/28/214.png'
     const msg    =
@@ -17,7 +18,7 @@
         <h1>{title}</h1>
         <p><img src={imgSrc} /></p>
       </div>
-    const elm = document.getElementById('root')
+
     ReactDOM.render(msg, elm)
   </script>
 </html>

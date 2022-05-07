@@ -10,9 +10,10 @@
     <div id="root"></div>
   </body>
   <script type="text/babel">
-    const val  = '<<<This is an escaped text.>>>'
-    const elem = <h2>{val}</h2>
     const root = document.getElementById('root')
-    ReactDOM.render(elem, root)
+    const val  = '<<<This is an escaped text.>>>'
+    const elm  = <h2>{val}</h2>
+
+    ReactDOM.render(elm, root)
   </script>
 </html>

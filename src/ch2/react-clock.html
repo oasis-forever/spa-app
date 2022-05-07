@@ -11,6 +11,7 @@
   </body>
   <script type="text/babel">
     setInterval(tick, 1000)
+
     function tick() {
       const date = new Date()
       const [hour, min, sec] = [
@@ -18,16 +19,19 @@
         date.getMinutes(),
         date.getSeconds(),
       ]
+
       const z2 =  (t) => {
         const s = '00' + t
         return s.substr(s.length - 2, 2)
       }
-      const elem =
+
+      const elm =
         <div>
           <h1>{z2(hour)}:{z2(min)}:{z2(sec)}</h1>
         </div>
+
       const root = document.getElementById('root')
-      ReactDOM.render(elem, root)
+      ReactDOM.render(elm, root)
     }
   </script>
 </html>

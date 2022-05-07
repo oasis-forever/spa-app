@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script type="text/babel">
+    const PhotoText = class extends React.Component {
+      render() {
+        const label    = this.props.label
+        const path = `./img/${this.props.image}.jpg`
+        const boxStyle = {
+          border: '1px solid silver',
+          margin: '8px',
+          padding: '4px',
+          textAlign: 'center',
+        }
+        return(
+        <div style={boxStyle}>
+          <p>{label}</p>
+          <img src={path} alt="PhotoText" width="900"/>
+        </div>
+        )
+      }
+    }
+    const dom =
+    <div>
+      <PhotoText image="my-lovely-cat-1" label="My Lovely Cat 1" />
+      <PhotoText image="my-lovely-cat-2" label="My Lovely Cat 2" />
+      <PhotoText image="my-lovely-cat-3" label="My Lovely Cat 3" />
+    </div>
+    const root = document.getElementById('root')
+    ReactDOM.render(dom, root)
+  </script>
+</html>
